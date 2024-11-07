@@ -1,16 +1,9 @@
-<include src="/html-includes/header.html" />
+<%= require('./html-includes/header.html')() %>
 
 <section class="py-16">
   <div class="title">Index</div>
 </section>
 
-<!-- TODO: scripts in html without DOMContentLoaded -->
 
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    console.log(Swiper);
 
-  })
-</script>
-
-<include src="/html-includes/footer.html" />
+<%= require('./html-includes/footer.html')() %>

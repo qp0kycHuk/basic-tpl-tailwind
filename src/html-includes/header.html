@@ -14,14 +14,12 @@
     window.maplocation = [45.219961, 39.222988]
   </script>
 
-  <script type="module" src="/js/index.ts"></script>
-  <script type="module" src="/js/components/index.ts"></script>
 </head>
 
 <body>
 
   <header class="flex items-center py-5 bg-l3 shadow-lg">
-    <include src="/html-includes/logo.html" />
+    <%= require('./logo.html')() %>
 
 
 

@@ -3,8 +3,11 @@
 @tailwind utilities;
 
 // plugins
-@import 'swiper/scss';
-@import 'swiper/scss/pagination';
+@layer base {
+  @import 'swiper/scss';
+  @import 'swiper/scss/pagination';
+}
+
 @import '@qpokychuk/ripple/index.css';
 @import '@qpokychuk/wc-menu/dist/index.css';
 @import '@qpokychuk/inter/index.css';
