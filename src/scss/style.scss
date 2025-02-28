@@ -48,16 +48,6 @@ body {
   }
 }
 
-@media (hover) {
-  // temp
-
-  .btn-white:hover,
-  .btn-white:is(.btn-group:hover .btn),
-  .btn-white:is(.btn-peer:hover~.btn) {
-    --tw-btn-color: #fff;
-  }
-}
-
 @layer components {
   .active-enabled:not(:is(:is(.toggle-active, .tab-active, .active) .active-enabled)) {
     display: none !important;
@@ -103,14 +93,5 @@ body {
         transform: scaleX(1);
       }
     }
-  }
-
-  .btn {
-    cursor: pointer;
-  }
-
-  .title {
-    font-size  : 32px;
-    font-weight: 600;
   }
 }

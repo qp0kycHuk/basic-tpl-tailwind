@@ -8,7 +8,9 @@
     "plugin:@typescript-eslint/recommended"
   ],
   "ignorePatterns": [
+    "webpack.config.js",
     "webpack.config.cjs",
+    "tailwind.config.ts",
     "tailwind.config.js",
     "tailwind.config.cjs",
     "postcss.config.js",
