@@ -1,21 +1,4 @@
 {
-  "css.validate": false,
-  "less.validate": false,
-  "scss.validate": false,
-  "stylelint.enable": true,
-  "stylelint.validate": [
-    "css",
-    "scss"
-  ],
-  "[scss]": {
-    "editor.defaultFormatter": "MikeBovenlander.formate"
-  },
-  "[css]": {
-    "editor.defaultFormatter": "MikeBovenlander.formate"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
-  },
   "files.exclude": {
     ".vscode": true,
     ".github": true,
@@ -28,19 +11,10 @@
     "tsconfig.json": true,
     "tsconfig.node.json": true,
     "vite.config.ts": true,
-    "server-deploy.sh": true,
+    "server-deploy.sh": true
   },
   "editor.detectIndentation": false,
   "editor.insertSpaces": true,
   "editor.indentSize": "tabSize",
-  "editor.tabSize": 2,
-  "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
-  "editor.formatOnPaste": false, // required 
-  "editor.formatOnType": false, // required
-  "editor.formatOnSave": true, // optional 
-  "editor.formatOnSaveMode": "file", // required to format on save
-  "vs-code-prettier-eslint.prettierLast": false,
-  "[php]": {
-    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
-  }
+  "editor.tabSize": 2
 }

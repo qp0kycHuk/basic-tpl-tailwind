@@ -1,15 +1,11 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@use 'tailwind';
 
-// plugins
-@layer base {
-  @import 'swiper/scss';
-  @import 'swiper/scss/pagination';
-}
+@use 'swiper/css';
+@use 'swiper/css/pagination';
+@use "@fancyapps/ui/dist/fancybox/fancybox.css";
 
-@import '@qpokychuk/ripple/index.css';
-@import '@qpokychuk/wc-menu/dist/index.css';
-@import '@qpokychuk/inter/index.css';
-@import '../ui/ui-core';
-@import './style';
+@use '@qpokychuk/ripple/index.css' as a;
+@use '@qpokychuk/wc-menu/dist/index.css' as b;
+// @use '@qpokychuk/inter/index.css' as c;
+@use '../ui/ui-core';
+@use './style';

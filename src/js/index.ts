@@ -1,16 +1,20 @@
 import phonemask from './phonemask/phonemask'
 import ripple from '@qpokychuk/ripple'
 
-import '../scss/index.scss'
 import fancybox from './fancybox'
 import swiper from './swiper'
 import animations from './animations'
 import scrollTo from './scrollTo'
 import theme from './theme'
 
+import '../scss/index.scss'
+
+
+
 window.addEventListener('DOMContentLoaded', () => loadHandler())
 
-function loadHandler() {
+function loadHandler() 
+{
   animations.init()
   scrollTo.init()
   swiper.init()

@@ -1,4 +1,10 @@
-@import 'functions';
+@use "sass:color";
+
+@function cl($hex) {
+  @return color.channel($hex, "red", $space: rgb),
+  color.channel($hex, "green", $space: rgb),
+  color.channel($hex, "blue", $space: rgb);
+}
 
 :root {
   /* theme colors */

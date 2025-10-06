@@ -1,14 +1,12 @@
-import { Fancybox } from '@fancyapps/ui'
-import ru from '@fancyapps/ui/src/Fancybox/l10n/ru'
+import { Fancybox, FancyboxOptions } from '@fancyapps/ui'
 
-Fancybox.defaults.trapFocus = false
-Fancybox.defaults.autoFocus = false
-Fancybox.defaults.placeFocusBack = false
-Fancybox.defaults.l10n = ru
-Fancybox.defaults.template.spinner = '<div class="progress progress-circle"> </div>'
+Fancybox.getDefaults().placeFocusBack = false
+
+
+// @ts-expect-error add global method
 Fancybox.modal = {}
-
-Fancybox.modal.open = (src: string, options: any) => {
+// @ts-expect-error add global method
+Fancybox.modal.open = (src: string, options: Partial<FancyboxOptions>) => {
   return Fancybox.show(
     [
       {
@@ -17,6 +15,7 @@ Fancybox.modal.open = (src: string, options: any) => {
       },
     ],
     {
+      // @ts-expect-error incorrect fancybox types
       type: 'ajax',
       dragToClose: false,
       mainClass: 'fancybox-custom-modal',
@@ -28,6 +27,7 @@ Fancybox.modal.open = (src: string, options: any) => {
 window.Fancybox = Fancybox
 
 function init() {
+  // @ts-expect-error incorrect fancybox types
   Fancybox.bind('[data-fancybox-modal]', {
     type: 'ajax',
     dragToClose: false,
